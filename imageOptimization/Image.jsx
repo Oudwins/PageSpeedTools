@@ -3,12 +3,13 @@ export default ({ src, sizes = "", ...imgProps }) => {
 
   //const breakpoints = [300, 640, 768, 1024, 1280, 1536];
   const breakpoints = [300, 640, 768, 1024];
+  const path = '/images/'
 
   const webpSrcSet = breakpoints
-    .map((bp) => `/images/${name}-${bp}.webp ${bp}w`)
+    .map((bp) => `${path}${name}-${bp}.webp ${bp}w`)
     .join(", ");
   const defaultSrcSet = breakpoints
-    .map((bp) => `/images/${name}-${bp}.${extension} ${bp}w`)
+    .map((bp) => `${path}${name}-${bp}.${extension} ${bp}w`)
     .join(", ");
 
   return (
@@ -21,7 +22,7 @@ export default ({ src, sizes = "", ...imgProps }) => {
       />
 
       <img
-        src={`/images/${name}-${breakpoints[0]}.${extension}`}
+        src={`${path}${name}-${breakpoints[0]}.${extension}`}
         loading="lazy"
         {...imgProps}
       />
