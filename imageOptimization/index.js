@@ -8,13 +8,15 @@ const sourceDir = __dirname + "../src/images/";
 
 const outputDir = __dirname + "../dist/images/";
 
+const widths = [300, 640, 768, 1024, 1280, 1536];
+
 (async () => {
   const files = await fs.readdir(sourceDir);
 
   for (let file of files) {
     let url = sourceDir + file;
     let stats = await Image(url, {
-      widths: [300, 640, 768, 1024, 1280, 1536],
+      widths,
       formats: ["webp", "auto"],
       outputDir,
       filenameFormat: function (id, src, width, format, options) {
