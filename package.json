@@ -1,8 +1,9 @@
 {
   "name": "PageSpeedTools",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "imageOptimization/index.js",
+  "main": "imageOptimization/imageOptimize.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,6 +1,6 @@
-const Image = require("@11ty/eleventy-img");
-const path = require("path");
-const fs = require("fs/promises");
+import Image from "@11ty/eleventy-img";
+import path from "path";
+import fs from "fs/promises";
 
 // resizes images to x different sizes & places them in output dir.
 
