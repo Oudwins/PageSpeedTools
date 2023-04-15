@@ -4,9 +4,9 @@ const fs = require("fs/promises");
 
 // resizes images to x different sizes & places them in output dir.
 
-const sourceDir = "./src/images/";
+const sourceDir = __dirname + "../src/images/";
 
-const outputDir = "./dist/images/";
+const outputDir = __dirname + "../dist/images/";
 
 (async () => {
   const files = await fs.readdir(sourceDir);
