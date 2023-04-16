@@ -19,3 +19,9 @@ If you have lots of third party code slowing down the site. Simple fix is to del
 
 thirdPartyScriptDelay.ts
 - Function that takes in a list of urls & injects the script tags after 2s.
+
+
+## TODO
+- Create a react component for embeded youtube video
+    - Takes an image src, youtube video url, play button style & color
+    - Adds play button to image & on click shows pup-up with the youtube video
